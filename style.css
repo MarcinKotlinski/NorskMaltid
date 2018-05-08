@@ -1,0 +1,149 @@
+#grad1 {
+    height: 80px;
+    background: #1198c6; /* For browsers that do not support gradients */
+    background: linear-gradient(#1198c6, #005e88); /* Standard syntax (must be last) */
+}
+
+#logo{
+    position: absolute;
+    font-family: 'Lobster', sans-serif;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 40px;
+
+
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #cf2751;
+    background-color: #cf2751;
+}
+#menu li {
+    float: right;
+}
+
+#menu li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+    color: #2c87b5;
+}
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:45px;
+    border-top: 5px solid #cf2751;
+    background: #1198c6; /* For browsers that do not support gradients */
+    background: linear-gradient(#1198c6, #005e88);
+}
+
+.top{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.top img{
+    width: 100%;
+    height: 199px;
+}
+#rectangle {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 400px solid white;
+    position: absolute;
+    bottom: 0;
+}
+.content{
+    padding: 0 10px;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.content h2{
+    margin: 0 0 8px 0px;
+    text-transform: uppercase;
+}
+.content h3{
+    margin: 0;
+    text-transform: uppercase
+}
+.content ul{
+    margin: 0;
+    padding: 0;
+}
+.content ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+}
+.content ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    background: #314652;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    transition: 0.2s all;
+}
+.content ul li a:hover {
+    transform: scale(1.2);
+}
+#rectangle1 {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid transparent;
+    border-right: 400px solid white;
+    position: absolute;
+    top: -1px;
+}
+#footer ul {
+    list-style-type: none;
+}
+#footer li {
+    float: left;
+    text-align: center;
+}
+
+#footer li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 20px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#footer li a:hover:not(.active) {
+    color: #2c87b5;
+}
+figcaption{
+    font-family: 'Lobster', sans-serif;
+    color: #cf2751;
+    font-size: 20px;
+    margin-left: 20px;
+}
+img{
+    padding: 20px;
+}
