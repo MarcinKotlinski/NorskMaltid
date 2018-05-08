@@ -8,11 +8,10 @@
     position: absolute;
     font-family: 'Lobster', sans-serif;
     color: white;
-    margin-left: 20px;
+    margin-left: 200px;
     margin-top: 20px;
     text-shadow: 2px 2px 4px #000000;
     font-size: 40px;
-
 
 }
 #menu ul {
@@ -22,6 +21,7 @@
     overflow: hidden;
     border: 1px solid #cf2751;
     background-color: #cf2751;
+
 }
 #menu li {
     float: right;
@@ -142,8 +142,28 @@ figcaption{
     font-family: 'Lobster', sans-serif;
     color: #cf2751;
     font-size: 20px;
-    margin-left: 20px;
+    margin-left: 15px;
+    padding: 15px;
+    text-align: left;
 }
 img{
     padding: 20px;
+    width: 100%;
+}
+div.polaroid {
+    width: 18%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-left: 200px;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+div.container {
+    text-align: left;
+    padding: 10px 20px;
+    font-family: 'Lobster', sans-serif;
+    font-size: 30px;
+    color: #cf2751;
 }
