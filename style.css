@@ -1,3 +1,17 @@
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
 #grad1 {
     height: 80px;
     background: #1198c6; /* For browsers that do not support gradients */
@@ -154,9 +168,13 @@ div.polaroid {
     width: 18%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
+    margin-bottom: 130px;
     margin-left: 200px;
     margin-top: 25px;
+    display: inline-block;
+}
+
+div.polaroid p{
     display: inline-block;
 }
 
@@ -166,4 +184,11 @@ div.container {
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
     color: #cf2751;
+}
+div.polaroid.food_type{
+    text-align: right;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #a1a1a1;
+
 }
