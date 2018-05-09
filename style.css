@@ -174,21 +174,28 @@ div.polaroid {
     display: inline-block;
 }
 
-div.polaroid p{
+div.polaroid p {
     display: inline-block;
 }
-
-div.container {
+div.polaroid i{
+    margin-left: 25px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+div.polaroid i:hover:not(.active){
+    color: #cf2751;
+}
+p.food_name {
     text-align: left;
     padding: 10px 20px;
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
     color: #cf2751;
 }
-div.polaroid.food_type{
+p.food_type{
     text-align: right;
     font-family: Arial, sans-serif;
-    font-size: 25px;
+    font-size: 15px;
     color: #a1a1a1;
-
 }
+
