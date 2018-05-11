@@ -1,66 +1,71 @@
-html{
+html, body {
     height: 100%;
     padding: 0;
     margin: 0;
 }
-body{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     height: 100%;
     padding: 0;
     margin: 0;
 }
-#wrapper{
-    min-height: 100%;
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+#header {
     position: relative;
-}
-#grad1 {
-    height: 80px;
     background: #1198c6; /* For browsers that do not support gradients */
     background: linear-gradient(#1198c6, #005e88); /* Standard syntax (must be last) */
 }
 
-#logo{
-    position: absolute;
-    font-family: 'Lobster', sans-serif;
-    color: white;
-    margin-left: 200px;
-    margin-top: 20px;
-    text-shadow: 2px 2px 4px #000000;
-    font-size: 40px;
+#header .holder {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
 
+#logo {
+    background: url("logo.png") no-repeat;
+    width: 243px;
+    height: 122px;
+    font-size: 0;
+    line-height: 0;
+    margin: 0 0 -25px;
+}
+
+#menu {
+    background: #cf2751;
 }
 #menu ul {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    border: 1px solid #cf2751;
-    background-color: #cf2751;
-
 }
 #menu li {
     float: right;
+    margin-left: 20px;
 }
 
 #menu li a {
     display: block;
-    color: #ffffff;
-    text-align: center;
-    margin-right: 20px;
+    color: #fff;
     padding: 14px 16px;
-    text-decoration: none;
 }
 
-#menu li a:hover:not(.active) {
-    color: #2c87b5;
+#menu li a:hover {
+    color: #fff;
+    background: #f00;
 }
-body {
-    margin:0;
-    padding:0;
-    height:100%;
-}
+
 #footer {
-    position:absolute;
-    bottom:0;
     width:100%;
     height:45px;
     border-top: 5px solid #cf2751;
@@ -68,133 +73,75 @@ body {
     background: linear-gradient(#1198c6, #005e88);
 }
 
-.top{
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    position: relative;
-}
-.top img{
-    width: 100%;
-    height: 199px;
-}
-#rectangle {
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-left: 400px solid white;
-    position: absolute;
-    bottom: 0;
-}
-.content{
-    padding: 0 10px;
-    text-align: center;
-    overflow: hidden;
-    padding: 10px;
-}
-.content h2{
-    margin: 0 0 8px 0px;
-    text-transform: uppercase;
-}
-.content h3{
-    margin: 0;
-    text-transform: uppercase
-}
-.content ul{
+#footer ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-}
-.content ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 8px;
-}
-.content ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-    background: #314652;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    line-height: 30px;
     text-align: center;
-    transition: 0.2s all;
 }
-.content ul li a:hover {
-    transform: scale(1.2);
-}
-#rectangle1 {
-    width: 0;
-    height: 0;
-    border-bottom: 30px solid transparent;
-    border-right: 400px solid white;
-    position: absolute;
-    top: -1px;
-}
-#footer ul {
-    list-style-type: none;
-}
+
 #footer li {
-    float: left;
-    text-align: center;
+    display: inline-block;
 }
 
 #footer li a {
     display: inline-block;
     color: #ffffff;
     text-align: center;
-    margin-right: 20px;
+    margin: 0 10px;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 #footer li a:hover:not(.active) {
-    color: #2c87b5;
-}
-figcaption{
-    font-family: 'Lobster', sans-serif;
     color: #cf2751;
-    font-size: 20px;
-    margin-left: 15px;
-    padding: 15px;
-    text-align: left;
-}
-img{
-    padding: 20px;
-    width: 100%;
-}
-div.polaroid {
-    width: 18%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 130px;
-    margin-left: 200px;
-    margin-top: 25px;
-    display: inline-block;
 }
 
-div.polaroid p {
+#content {
+    margin: 0 auto;
+    width: 1000px;
+}
+.content-items {
+    margin: 0 0 20px -5%;
+}
+.content-items img {
+    width: 100%;
+}
+.content-items .polaroid {
+    width: 28%;
+    padding: 40px 0 0 5%;
     display: inline-block;
 }
-div.polaroid i{
+.polaroid .item {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    box-shadow:         0px 0px 10px 0px rgba(50, 50, 50, 0.5);
+    background: #fff;
+}
+.polaroid p {
+    display: inline-block;
+    margin: 0;
+}
+.polaroid i {
     margin-left: 25px;
     margin-bottom: 30px;
     color: #e0e0e0;
 }
-div.polaroid i:hover:not(.active){
+.polaroid i:hover {
     color: #cf2751;
 }
-p.food_name {
+.polaroid .container {
+    padding: 0 20px;
+}
+.food_name {
     text-align: left;
-    padding: 10px 20px;
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
     color: #cf2751;
 }
-p.food_type{
-    text-align: right;
-    font-family: Arial, sans-serif;
+.food_type {
+    line-height: 38px;
+    float: right;
     font-size: 15px;
     color: #a1a1a1;
 }
