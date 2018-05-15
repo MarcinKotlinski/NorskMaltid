@@ -1,3 +1,48 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
 html, body {
     height: 100%;
     padding: 0;
@@ -22,8 +67,8 @@ a {
 
 #header {
     position: relative;
-    background: #1198c6; /* For browsers that do not support gradients */
-    background: linear-gradient(#1198c6, #005e88); /* Standard syntax (must be last) */
+    background: #1095c3; /* For browsers that do not support gradients */
+    background: linear-gradient(#1095c3, #00577e); /* Standard syntax (must be last) */
 }
 
 #header .holder {
@@ -35,7 +80,7 @@ a {
 #logo {
     background: url("logo.png") no-repeat;
     width: 243px;
-    height: 122px;
+    height: 121px;
     font-size: 0;
     line-height: 0;
     margin: 0 0 -25px;
@@ -90,8 +135,9 @@ a {
     margin: 0;
 }
 .polaroid i {
-    margin-left: 25px;
-    margin-bottom: 30px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+    margin-right: 18px;
     color: #e0e0e0;
 }
 .polaroid i:hover {
@@ -104,7 +150,8 @@ a {
     text-align: left;
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
-    padding: 5px;
+    padding-top: 8px;
+    padding-bottom: 17px;
     color: #cf2751;
 }
 .food_type {
@@ -117,7 +164,7 @@ a {
     text-align: left;
 }
 .share{
-    float: right
+    float: right;
 }
 #footer {
     width:100%;
