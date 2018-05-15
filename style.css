@@ -15,6 +15,7 @@ a {
     text-decoration: none;
 }
 
+
 #wrapper {
     width: 100%;
 }
@@ -39,7 +40,6 @@ a {
     line-height: 0;
     margin: 0 0 -25px;
 }
-
 #menu {
     background: #cf2751;
 }
@@ -64,39 +64,6 @@ a {
     color: #fff;
     background: #f00;
 }
-
-#footer {
-    width:100%;
-    height:45px;
-    border-top: 5px solid #cf2751;
-    background: #1198c6; /* For browsers that do not support gradients */
-    background: linear-gradient(#1198c6, #005e88);
-}
-
-#footer ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#footer li {
-    display: inline-block;
-}
-
-#footer li a {
-    display: inline-block;
-    color: #ffffff;
-    text-align: center;
-    margin: 0 10px;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-#footer li a:hover:not(.active) {
-    color: #cf2751;
-}
-
 #content {
     margin: 0 auto;
     width: 1000px;
@@ -137,12 +104,49 @@ a {
     text-align: left;
     font-family: 'Lobster', sans-serif;
     font-size: 30px;
+    padding: 5px;
     color: #cf2751;
 }
 .food_type {
-    line-height: 38px;
+    line-height: 55px;
     float: right;
     font-size: 15px;
     color: #a1a1a1;
 }
+.heart{
+    text-align: left;
+}
+.share{
+    float: right
+}
+#footer {
+    width:100%;
+    height:45px;
+    border-top: 5px solid #cf2751;
+    background: #1198c6; /* For browsers that do not support gradients */
+    background: linear-gradient(#1198c6, #005e88);
+}
 
+#footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#footer li {
+    display: inline-block;
+}
+
+#footer li a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 10px;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#footer li a:hover:not(.active) {
+    color: #cf2751;
+}
