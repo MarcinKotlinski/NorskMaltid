@@ -42,7 +42,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 html, body {
     height: 100%;
     padding: 0;
@@ -55,26 +54,34 @@ body {
     padding: 0;
     margin: 0;
 }
-
 a {
     text-decoration: none;
 }
 #wrapper {
     width: 100%;
 }
-
 #header {
     position: relative;
+    width: 100%;
     background: #1095c3; /* For browsers that do not support gradients */
     background: linear-gradient(#1095c3, #00577e); /* Standard syntax (must be last) */
 }
-
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #header .holder {
+        float: none;
+    }
+}
 #header .holder {
     width: 1000px;
     margin: 0 auto;
     position: relative;
-}
 
+}
 #logo {
     background: url("logo.png") no-repeat;
     width: 243px;
@@ -96,16 +103,26 @@ a {
     float: right;
     margin-left: 20px;
 }
-
 #menu li a {
     display: block;
     color: #fff;
     padding: 14px 16px;
 }
-
 #menu li a:hover {
     color: #fff;
     background: #f00;
+}
+@media screen and (max-width: 800px) {
+    .content-items .polaroid {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content-items .polaroid {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
 #content {
     margin: 0 auto;
@@ -113,6 +130,10 @@ a {
 }
 .content-items {
     margin: 0 0 20px -5%;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
 }
 .content-items img {
     width: 100%;
@@ -141,7 +162,6 @@ a {
 .polaroid i:hover {
     color: #cf2751;
 }
-
 .polaroid .container {
     padding: 0 20px;
 }
@@ -176,7 +196,6 @@ a {
     background: #1198c6; /* For browsers that do not support gradients */
     background: linear-gradient(#1198c6, #005e88);
 }
-
 #footer ul {
     list-style: none;
     margin: 0;
@@ -187,7 +206,6 @@ a {
 #footer li {
     display: inline-block;
 }
-
 #footer li a {
     display: inline-block;
     color: #ffffff;
@@ -196,7 +214,6 @@ a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 #footer li a:hover:not(.active) {
     color: #cf2751;
 }
