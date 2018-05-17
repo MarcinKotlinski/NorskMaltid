@@ -48,8 +48,7 @@ html, body {
     margin: 0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font: 14px Arial, Helvetica, sans-serif;
     height: 100%;
     padding: 0;
     margin: 0;
@@ -66,21 +65,10 @@ a {
     background: #1095c3; /* For browsers that do not support gradients */
     background: linear-gradient(#1095c3, #00577e); /* Standard syntax (must be last) */
 }
-@media screen and (max-width: 500px) {
-    .header a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    #header .holder {
-        float: none;
-    }
-}
 #header .holder {
     width: 1000px;
     margin: 0 auto;
     position: relative;
-
 }
 #logo {
     background: url("logo.png") no-repeat;
@@ -90,7 +78,18 @@ a {
     line-height: 0;
     margin: 0 0 -25px;
 }
+.drop-button {
+    display: none;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    float: right;
+    color: #fff;
+    background: #cf2751;
+    text-align: center;
+}
 #menu {
+    height: 44px;
     background: #cf2751;
 }
 #menu ul {
@@ -111,18 +110,6 @@ a {
 #menu li a:hover {
     color: #fff;
     background: #f00;
-}
-@media screen and (max-width: 800px) {
-    .content-items .polaroid {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .content-items .polaroid {
-        flex: 100%;
-        max-width: 100%;
-    }
 }
 #content {
     margin: 0 auto;
@@ -154,9 +141,7 @@ a {
     margin: 0;
 }
 .polaroid i {
-    margin-left: 18px;
-    margin-bottom: 18px;
-    margin-right: 18px;
+    margin: 0 18px 18px;
     color: #e0e0e0;
 }
 .polaroid i:hover {
@@ -190,8 +175,8 @@ a {
     float: right;
 }
 #footer {
-    width:100%;
-    height:45px;
+    width: 100%;
+    height: 45px;
     border-top: 5px solid #cf2751;
     background: #1198c6; /* For browsers that do not support gradients */
     background: linear-gradient(#1198c6, #005e88);
@@ -217,3 +202,4 @@ a {
 #footer li a:hover:not(.active) {
     color: #cf2751;
 }
+

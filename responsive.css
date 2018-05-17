@@ -1,0 +1,52 @@
+@media screen and (max-width: 999px) {
+    #header .holder, #content {
+        width: 768px;
+    }
+    .food_name{
+        font-size: 25px;
+    }
+    .food_type{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .drop-button {
+        display: block;
+    }
+    .drop-button + ul {
+        display: none;
+        position: absolute;
+        top: 44px;
+        right: 0;
+        width: 100%;
+        background: #cf2751;
+    }
+    .drop-button + ul.active {
+        display: block;
+    }
+    #menu li {
+        float: none;
+        margin: 0;
+        border-bottom: 1px solid #fff;
+    }
+    #header .holder, #content {
+        width: 360px;
+    }
+    .content-items .polaroid {
+        width: 45%;
+    }
+    .food_name{
+        font-size: 18px;
+    }
+    .food_type{
+        line-height: 45px;
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content-items .polaroid {
+        width: 100%;
+    }
+}
