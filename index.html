@@ -2,11 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Norsk Maltid</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="script" href="action.js">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -37,7 +39,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks1 = 0;
+                            function onClick1() {
+                                clicks1 += 1;
+                                document.getElementById("salmon").innerHTML = clicks1;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick1()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="salmon">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -51,7 +61,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks2 = 0;
+                            function onClick2() {
+                                clicks2 += 1;
+                                document.getElementById("salmon2").innerHTML = clicks2;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick2()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="salmon2">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -66,7 +84,15 @@
                         <p class="food_type">Breakfast</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks3 = 0;
+                            function onClick3() {
+                                clicks3 += 1;
+                                document.getElementById("krumkaker").innerHTML = clicks3;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick3()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="krumkaker">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -81,7 +107,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks4 = 0;
+                            function onClick4() {
+                                clicks4 += 1;
+                                document.getElementById("lasagne").innerHTML = clicks4;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick4()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="lasagne">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -96,7 +130,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks5 = 0;
+                            function onClick5() {
+                                clicks5 += 1;
+                                document.getElementById("burger").innerHTML = clicks5;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick5()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="burger">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -111,7 +153,15 @@
                         <p class="food_type">Breakfast</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks6 = 0;
+                            function onClick6() {
+                                clicks6 += 1;
+                                document.getElementById("kanel").innerHTML = clicks6;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick6()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="kanel">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -126,7 +176,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks7 = 0;
+                            function onClick7() {
+                                clicks7 += 1;
+                                document.getElementById("beef").innerHTML = clicks7;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick7()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="beef">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -142,7 +200,15 @@
                         <p class="food_type">Breakfast</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks8 = 0;
+                            function onClick8() {
+                                clicks8 += 1;
+                                document.getElementById("wasa").innerHTML = clicks8;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick8()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="wasa">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>
@@ -157,7 +223,15 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <a href="#"><i class="material-icons heart" >favorite_border</i></a>
+                        <script type="text/javascript">
+                            var clicks9 = 0;
+                            function onClick9() {
+                                clicks9 += 1;
+                                document.getElementById("krum").innerHTML = clicks9;
+                            };
+                        </script>
+                        <a href="#"onClick="onClick9()"><i class="material-icons heart like-counter" >favorite_border</i></a>
+                        <a class="counter" id="krum">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
                     </div>
                 </div>

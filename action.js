@@ -1,9 +1,5 @@
-var likeCount = 0;
-
-function like(){
-    likeCount++;
-}
-
-function displayLike(){
-
-}
+var clicks = 0;
+function onClick() {
+    clicks += 1;
+    document.getElementById("counter").innerHTML = clicks;
+};
