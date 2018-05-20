@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="script" href="action.js">
+    <script type="text/javascript" src="action.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </head>
@@ -227,13 +227,6 @@
                         <p class="food_type">Dinner</p>
                     </div>
                     <div class="icons">
-                        <script type="text/javascript">
-                            var clicks9 = 0;
-                            function onClick9() {
-                                clicks9 += 1;
-                                document.getElementById("krum").innerHTML = clicks9;
-                            };
-                        </script>
                         <a id="heart1" href="#"><i class="material-icons heart like-counter" >favorite_border</i></a>
                         <a class="counter" id="krum">0</a>
                         <a href="#"><i class="material-icons share" >share</i></a>
@@ -250,22 +243,6 @@
         </ul>
     </div>
 </div>
-<script type="text/javascript">
-    var clicks9 = 0;
-    var dropmenu = document.querySelector('#menu ul');
 
-    window.onload = function () {
-        document.getElementById("heart1").addEventListener("click", function(event){
-            event.preventDefault();
-            clicks9 += 1;
-            document.getElementById("krum").innerHTML = clicks9;
-        });
-
-        document.querySelector('.drop-button').addEventListener("click", function(event){
-            event.preventDefault();
-            dropmenu.classList.toggle('active');
-        });
-    }
-</script>
 </body>
 </html>
